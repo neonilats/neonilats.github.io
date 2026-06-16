@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frispes – Revolutionary Co-Working Space</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Frispes.</a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link active">Home</a></li>
+          <li><a href="#spaces" class="nav__link">Workspace</a></li>
+          <li><a href="#facilities" class="nav__link">Service</a></li>
+          <li><a href="#news" class="nav__link">Events</a></li>
+          <li><a href="#reviews" class="nav__link">Reviews</a></li>
+          <li><a href="#faq" class="nav__link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="btn btn--ghost">Log In</a>
+        <a href="#" class="btn btn--primary">Sign Up</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="#" class="mobile-nav__link">Home</a></li>
+      <li><a href="#spaces" class="mobile-nav__link">Workspace</a></li>
+      <li><a href="#facilities" class="mobile-nav__link">Service</a></li>
+      <li><a href="#news" class="mobile-nav__link">Events</a></li>
+      <li><a href="#reviews" class="mobile-nav__link">Reviews</a></li>
+      <li><a href="#faq" class="mobile-nav__link">Contact Us</a></li>
+      <li class="mobile-nav__actions">
+        <a href="#" class="btn btn--ghost">Log In</a>
+        <a href="#" class="btn btn--primary">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- Top row: title left, description right -->
+      <div class="container">
+        <div class="hero__top">
+          <div class="hero__top-left">
+            <p class="hero__intro"><span class="hero__line"></span> Introducing</p>
+            <h1 class="hero__title">
+              <span class="accent">Revolutionary</span> co-working space to realize your innovation
+            </h1>
+          </div>
+          <div class="hero__top-right">
+            <p class="hero__desc">In Frispes, we spearhead new initiatives and provide mentorship to a new startup, and help grow their opportunities in key local, regional and global markets</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom row: search card left overlaps photo right -->
+      <div class="hero__stage">
+        <div class="container hero__stage-inner">
+          <div class="hero__search">
+            <h3 class="search__title">Find your space now</h3>
+            <div class="search__field">
+              <label>Location</label>
+              <select>
+                <option>Malang, Indonesia</option>
+                <option>Jakarta, Indonesia</option>
+                <option>Surabaya, Indonesia</option>
+              </select>
+            </div>
+            <div class="search__field">
+              <label>Type</label>
+              <select>
+                <option>Private Office</option>
+                <option>Co-working Space</option>
+                <option>Meeting Room</option>
+              </select>
+            </div>
+            <div class="search__field">
+              <label>Date</label>
+              <input type="date" value="2020-08-09" />
+            </div>
+            <button class="btn btn--primary btn--full">FIND MY SPACE</button>
+          </div>
+        </div>
+        <!-- Photo bleeds to the right edge -->
+        <div class="hero__photo">
+          <img src="images/firstimage.png" alt="Co-working space interior" />
+        </div>
+      </div>
+    </section>
+
+   <section class="spaces" id="spaces">
+  <div class="container">
+    
+    <div class="spaces__header">
+      <h2 class="section-title">Our Spaces</h2>
+      <div class="spaces__header-right">
+        <p class="section-desc">Our space is designed to give you a different experience when working with your team or personally</p>
+        <div class="spaces__arrows">
+          <button class="spaces-arrow spaces-arrow--prev" id="spacesPrev" aria-label="Previous">&#8592;</button>
+          <button class="spaces-arrow spaces-arrow--next" id="spacesNext" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="spaces__track-wrap">
+      <div class="spaces__track" id="spacesSlider">
+
+        <div class="scard scard--img">
+          <div class="scard__img-wrap">
+            <img src="images/ourspaceimage1.png" alt="Working with team" />
+            <button class="scard__arrow">&#8250;</button>
+          </div>
+          <p class="scard__label">Working with team</p>
+        </div>
+
+        <div class="scard scard--dark">
+          <div class="scard__pattern"></div>
+          <div class="scard__dark-body">
+            <h3>Private Space</h3>
+            <p>Comfortable space, Full speed<br>wifi, Free coffe &amp; Snack<br>and many more</p>
+          </div>
+          <button class="scard__check">Check availbility &nbsp;&#8250;</button>
+        </div>
+
+        <div class="scard scard--img">
+          <div class="scard__img-wrap">
+            <img src="images/ourspaceimage2.png" alt="Custom Office" />
+            <button class="scard__arrow">&#8250;</button>
+          </div>
+          <p class="scard__label">Custom Office</p>
+        </div>
+
+        <div class="scard scard--img">
+          <div class="scard__img-wrap">
+            <img src="images/ourspaceimage3.png" alt="Co-working Space" />
+            <button class="scard__arrow">&#8250;</button>
+          </div>
+          <p class="scard__label">Co-working Space</p>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+    <div class="spaces__footer">
+      <div class="spaces__progress">
+        <div class="spaces__progress-bar" id="spacesBar"></div>
+      </div>
+      <p class="spaces__counter"><strong id="spacesIdx">01</strong> / 04</p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- STATS + WHY FRISPES -->
+ <section class="stats-why">
+  <div class="container stats-why__inner">
+    
+    <div class="stats">
+      <div class="stat">
+        <img src="images/iconsection3.png" alt="Meeting rooms" class="stat__icon" />
+        <div>
+          <strong>500+</strong>
+          <span>Meeting rooms</span>
+        </div>
+      </div>
+      <div class="stat">
+        <img src="images/icon2section3.png" alt="Event spaces" class="stat__icon" />
+        <div>
+          <strong>100+</strong>
+          <span>Event spaces</span>
+        </div>
+      </div>
+      <div class="stat">
+        <img src="images/icon6section3.png" alt="Countries" class="stat__icon" />
+        <div>
+          <strong>60+</strong>
+          <span>Countries</span>
+        </div>
+      </div>
+      <div class="stat">
+        <img src="images/icon3section3.png" alt="Internet speed" class="stat__icon" />
+        <div>
+          <strong>500 Mbps</strong>
+          <span>Internet speed</span>
+        </div>
+      </div>
+      <div class="stat">
+        <img src="images/icon4section3.png" alt="Startup mentors" class="stat__icon" />
+        <div>
+          <strong>5K+</strong>
+          <span>Startup mentors</span>
+        </div>
+      </div>
+      <div class="stat">
+        <img src="images/icon5section3.png" alt="Communities inside" class="stat__icon" />
+        <div>
+          <strong>200+</strong>
+          <span>Communities inside</span>
+        </div>
+      </div>
+    </div>
+    <div class="why-card">
+      <p class="why-card__eyebrow">Why Frispes <span class="why-card__line"></span></p>
+      <h2>We revolutionize your workspace</h2>
+      <p>With a decade of insights and expertise, we're decided to reimagine co-working space, designed to help a new startup grow up and realize their ideas so they can give a positive impacts on many people</p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- FACILITIES -->
+    <section class="facilities" id="facilities">
+      <div class="container">
+        <p class="eyebrow">Our Facilities <span class="eyebrow__line"></span></p>
+        <h2 class="section-title">All facilities are designed to meet all your needs</h2>
+
+ <div class="facilities__inner">
+  <div class="facilities__tabs">
+    <div class="facilities__counter">03/05</div>
+    <ul class="tab-list" id="facilityTabs">
+      <li class="tab-item">Spacious parking area</li>
+      <li class="tab-item">Comfortable spaces</li>
+      <li class="tab-item active">Cozy cafe</li> 
+      <li class="tab-item">Child playground</li>
+      <li class="tab-item">Outdoor spaces</li>
+    </ul>
+  </div>
+  
+  <!-- ПРАВА ЧАСТИНА (ВСІ ТВОЇ ФОТО ТУТ) -->
+  <div class="facilities__img" id="facilityImages">
+    <!-- Просто міняй src у цих тегах на свої фото -->
+    <img src="images/parking.png" alt="Parking" />
+    <img src="images/comfortable.png" alt="Spaces" />
+    <img src="images/facilitiessectionoimage.png" alt="Cozy cafe" class="active" /> <!-- Ця фотка активна за замовчуванням -->
+    <img src="images/playground.png" alt="Playground" />
+    <img src="images/outdoor.png" alt="Outdoor" />
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+<section class="gallery">
+  <div class="gallery__bleed">
+    <img src="images/immersive1.png" alt="Space" />
+  </div>
+  <div class="gallery__center">
+    <img src="images/immersive2.png" alt="Team" />
+  </div>
+  <div class="gallery__right">
+    <div class="gallery__text">
+      <p class="eyebrow">Frispes gallery <span class="eyebrow__line"></span></p>
+      <h2>Immersive beautiful co-working space gallery</h2>
+      <div class="gallery__arrows">
+        <button class="g-arrow g-arrow--prev">&#10229;</button>
+        <button class="g-arrow g-arrow--next">&#10230;</button>
+      </div>
+    </div>
+    <div class="gallery__thumbs">
+         <img src="images/immersive3.png" alt="Gallery 3" />  <!-- ця є? -->
+      <img src="images/immersive4.png" alt="Gallery 3" />
+    </div>
+  </div>
+</section>
+
+    <!-- WHO USES -->
+    <section class="brands">
+      <div class="container brands__inner">
+        <h3>Who uses Frispes?</h3>
+        <p>Big brands, small business, new startups and individuals</p>
+        <div class="brands__logos">
+          <img src="images/google.png" alt="Google" />
+          <img src="images/tokopedia.png" alt="Tokopedia" />
+          <img src="images/upmywork.png" alt="Upwork" />
+          <img src="images/microsoft.png" alt="Microsoft" />
+          <img src="images/shopify.png" alt="Shopify" />
+          <img src="images/stripe.png" alt="Stripe" />
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__left">
+            <p class="eyebrow">Reviews <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">What our customers are saying</h2>
+          </div>
+          <div class="section-header__right">
+            <div class="slider-arrows">
+              <button class="arrow arrow--prev" id="reviewsPrev" aria-label="Previous">&#8592;</button>
+              <button class="arrow arrow--next" id="reviewsNext" aria-label="Next">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__grid" id="reviewsSlider">
+          <div class="review-card review-card--dark">
+            <p>Our team has been working at Frispes for almost 2 months because our office still closed. During working at frispes, we feel a new experience, we can feel working with a beautiful, modern, and comfortable space. And cozy cafe with high-speed internet in there. Thank you for Frispes and team.</p>
+            <div class="review-card__author">
+              <img src="images/pedroilbanez.png" alt="Pedro Ibanez" />
+              <div>
+                <strong>Pedro Ibanez</strong>
+                <span>UI Designer at Google</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <p>The high-speed internet at Frispes was so amazing, I can get best experience when running video call with my clients. Frispes has spacious and safe parking area, that's what I need because I used to work as freelancer for a long time.</p>
+            <div class="review-card__author">
+              <img src="images/raymondthual.png" alt="Raymond Thual" />
+              <div>
+                <strong>Raymond Thual</strong>
+                <span>Professional Freelancer</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <p>Just three words: Frispes is Awesome!</p>
+            <div class="review-card__author">
+              <img src="images/yuliverlian.png" alt="Yuli Berlian" />
+              <div>
+                <strong>Yuli Berlian</strong>
+                <span>iOS Dev at Tokopedia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-dots" id="reviewsDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container faq__inner">
+        <h2>Find the answers to anything you need in our Help Center</h2>
+        <div class="faq__cards">
+          <div class="faq-card">
+            <p>How do I know if a space is available?</p>
+            <button class="faq-card__btn">&#8964;</button>
+          </div>
+          <div class="faq-card faq-card--active">
+            <p>How do I book a space?</p>
+            <button class="faq-card__btn">&#8964;</button>
+          </div>
+          <div class="faq-card">
+            <p>How do reviews work?</p>
+            <button class="faq-card__btn">&#8964;</button>
+          </div>
+        </div>
+        <a href="#" class="faq__more">More questions &#8250;</a>
+      </div>
+    </section>
+
+   <section class="news" id="news">
+  <div class="container">
+    <div class="news__header">
+      <h2>News, events and insights for you</h2>
+      <a href="#" class="news__more">See more &#8250;</a>
+    </div>
+
+    <div class="news__grid">
+
+      <div class="news-feat-img">
+        <img src="images/news1.png" alt="Google I/O" />
+      </div>
+
+      <div class="news-feat-text">
+        <h3>Google I / O 2020 news update</h3>
+        <p>Out of concern for the health and safety of our developers, employees, and local communities — and in line with recent ...</p>
+        <div class="news-card__author">
+          <img src="images/sundari.png" alt="Sundar Pichai" />
+          <div>
+            <strong>Sundar Pichai</strong>
+            <span>CEO at Google</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card news-small">
+        <img src="images/news2.png" alt="Minimal workspace" />
+        <div class="news-card__body">
+          <h4>Minimal workspace for inspirations</h4>
+          <span>Anthony Masional</span>
+        </div>
+      </div>
+
+      <div class="news-card news-small">
+        <img src="images/news3.png" alt="Remote work" />
+        <div class="news-card__body">
+          <h4>Does productivity increase when working remotely?</h4>
+          <span>Franck Martin</span>
+        </div>
+      </div>
+
+      <div class="news-card news-small">
+        <img src="images/news4.png" alt="Morning routine" />
+        <div class="news-card__body">
+          <h4>Morning routine to boost your mood</h4>
+          <span>Elizabeth Swan</span>
+        </div>
+      </div>
+
+      <div class="news-card news-small">
+        <img src="images/news5.png" alt="Co-working tips" />
+        <div class="news-card__body">
+          <h4>5+ tips to find comfortable co-working space</h4>
+          <span>Mykola Ilschooko</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <div class="cta-banner__text">
+          <p class="eyebrow">Became a member <span class="eyebrow__line"></span></p>
+          <h2>Ready to try different work experience now?</h2>
+          <p>Get the best working experience that you never feel before</p>
+          <a href="#" class="btn btn--primary">SIGN UP NOW</a>
+        </div>
+        <div class="cta-banner__img">
+          <img src="images/workerindia.png" alt="Happy member" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+ <footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#" class="logo logo--white">Frispes</a>
+      <p>We offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many more for your best workspaces and meetings</p>
+    <div class="footer__socials">
+  <a href="#" aria-label="Instagram" class="footer__social-link">
+    <img src="images/instagramicon.png" alt="Instagram">
+  </a>
+  <a href="#" aria-label="YouTube" class="footer__social-link">
+    <img src="images/youtubeicon.png" alt="YouTube">
+  </a>
+  <a href="#" aria-label="Facebook" class="footer__social-link">
+    <img src="images/facebookicon.png" alt="Facebook">
+  </a>
+</div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Spaces</h4>
+      <ul>
+        <li><a href="#">Co-working spaces</a></li>
+        <li><a href="#">Meeting rooms</a></li>
+        <li><a href="#">Event spaces</a></li>
+        <li><a href="#">Child playground</a></li>
+        <li><a href="#">Cafe &amp; resto</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Contact Us</h4>
+      <ul class="footer__contact">
+        <li><span class="contact-label">E.</span> Hello@frispes.com</li>
+        <li><span class="contact-label">A.</span> Jalan Jayakatwang No.301 Ngasem, Kediri</li>
+        <li><span class="contact-label">P.</span> (+62) 82334670000</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

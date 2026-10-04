@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – Frispes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER / NAV -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo">Frispes.</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="workspace.html" class="nav__link">Workspace</a></li>
+            <li><a href="404.html" class="nav__link">Service</a></li>
+            <li><a href="events.html" class="nav__link">Events</a></li>
+            <li><a href="index.html#reviews" class="nav__link">Reviews</a></li>
+            <li><a href="contact.html" class="nav__link active">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="404.html" class="btn btn--ghost">Log In</a>
+          <a href="404.html" class="btn btn--primary">Sign Up</a>
+        </div>
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav__list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="workspace.html" class="mobile-nav__link">Workspace</a></li>
+        <li><a href="404.html" class="mobile-nav__link">Service</a></li>
+        <li><a href="events.html" class="mobile-nav__link">Events</a></li>
+        <li><a href="index.html#reviews" class="mobile-nav__link">Reviews</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
+        <li class="mobile-nav__actions">
+          <a href="404.html" class="btn btn--ghost">Log In</a>
+          <a href="404.html" class="btn btn--primary">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="ph" style="background-image: url(images/immersive4.png)">
+        <div class="container">
+          <p class="crumbs"><a href="index.html">Home</a> / Contact Us</p>
+          <h1>We'd love <span class="accent">to hear from you</span></h1>
+          <p class="lead">
+            Questions about spaces, pricing or events? We reply within one business day.
+          </p>
+          <button class="btn btn--primary" data-open="m-msg">WRITE TO US</button>
+        </div>
+      </section>
+      <!-- INFO CARDS -->
+      <section class="container infos">
+        <div class="info">
+          <div class="ico"><i class="fa-solid fa-location-dot"></i></div>
+          <div><strong>Address</strong><span>Jl. Jayakatwang No.301, Kediri</span></div>
+        </div>
+        <div class="info">
+          <div class="ico"><i class="fa-solid fa-envelope"></i></div>
+          <div><strong>Email</strong><span>Hello@frispes.com</span></div>
+        </div>
+        <div class="info">
+          <div class="ico"><i class="fa-solid fa-phone"></i></div>
+          <div><strong>Phone</strong><span>(+62) 82334670000</span></div>
+        </div>
+        <div class="info">
+          <div class="ico"><i class="fa-solid fa-clock"></i></div>
+          <div><strong>Hours</strong><span>Mon–Sun, 07:00–22:00</span></div>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section class="sec">
+        <div class="container splitx">
+          <div>
+            <p class="eyebrow">Visit us <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Come see the space in person</h2>
+            <p style="margin: 14px 0; color: var(--muted)">
+              Drop by for a coffee, meet the community manager and try a desk for a day. Parking is
+              free for visitors.
+            </p>
+            <button class="btn btn--primary" data-open="m-tour">Schedule a tour</button>
+          </div>
+          <iframe
+            class="map"
+            title="Map"
+            loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=111.95,-7.85,112.05,-7.78&amp;layer=mapnik"
+          ></iframe>
+        </div>
+      </section>
+      <!-- LIGHT SECTION -->
+      <section class="sec sec--light">
+        <div class="container">
+          <div class="center">
+            <p class="eyebrow">FAQ <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Frequently asked questions</h2>
+          </div>
+          <div class="acc">
+            <div class="acc__i">
+              <button class="acc__q">How do I know if a space is available?</button>
+              <div class="acc__a">
+                <p>
+                  Open Workspace, choose a space and date in the booking form – we confirm by email
+                  within a few hours.
+                </p>
+              </div>
+            </div>
+            <div class="acc__i">
+              <button class="acc__q">Can I cancel my booking?</button>
+              <div class="acc__a"><p>Yes, free of charge up to 24 hours before the start.</p></div>
+            </div>
+            <div class="acc__i">
+              <button class="acc__q">Do you have parking and a cafe?</button>
+              <div class="acc__a">
+                <p>Both: secure parking and a cozy cafe with free coffee for members.</p>
+              </div>
+            </div>
+            <div class="acc__i">
+              <button class="acc__q">How do reviews work?</button>
+              <div class="acc__a">
+                <p>After your visit you get a short email with a link to rate your space.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section class="sec">
+        <div class="container">
+          <!-- CTA: light card with photo on the right -->
+          <div class="cta cta--light">
+            <div class="cta__text">
+              <h2>Have another question? Let's talk</h2>
+              <p>Write to us or come for a tour – we will show you around and make a coffee.</p>
+              <button class="btn btn--primary" data-open="m-msg">SEND A MESSAGE</button>
+              <button class="btn btn--ghost" data-open="m-tour">SCHEDULE A TOUR</button>
+            </div>
+            <div class="pic">
+              <img src="images/immersive2.png" alt="Frispes team" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL -->
+      <div class="modal" id="m-msg">
+        <form
+          id="contactForm"
+          class="formbox"
+          data-form
+          data-ok="Дякуємо! Повідомлення надіслано."
+          novalidate
+        >
+          <button type="button" class="mx">&times;</button>
+          <h3>Send us a message</h3>
+          <div class="row">
+            <div class="field">
+              <label for="cn">Name</label
+              ><input
+                id="cn"
+                name="cn"
+                type="text"
+                placeholder="Your name"
+                data-v="required,min:3"
+              /><span class="msg"></span>
+            </div>
+            <div class="field">
+              <label for="ce">Email</label
+              ><input
+                id="ce"
+                name="ce"
+                type="email"
+                placeholder="you@company.com"
+                data-v="required,email"
+              /><span class="msg"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="ct">Topic</label
+            ><select id="ct" data-v="required">
+              <option value="">Choose a topic…</option>
+              <option>Booking</option>
+              <option>Pricing</option>
+              <option>Events</option>
+              <option>Partnership</option></select
+            ><span class="msg"></span>
+          </div>
+          <div class="field">
+            <label for="msgText">Message</label
+            ><textarea
+              id="msgText"
+              maxlength="500"
+              data-v="required,min:10"
+              placeholder="How can we help?"
+            ></textarea
+            ><span class="msg"></span><span class="hint" id="cnt">0 / 500</span>
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+      <!-- MODAL -->
+      <div class="modal" id="m-tour">
+        <form
+          class="formbox"
+          data-form
+          data-ok="Екскурсію заплановано! Ми зателефонуємо."
+          novalidate
+        >
+          <button type="button" class="mx">&times;</button>
+          <h3>Schedule a tour</h3>
+          <div class="field">
+            <label for="tn">Name</label
+            ><input
+              id="tn"
+              name="tn"
+              type="text"
+              placeholder="Your name"
+              data-v="required,min:3"
+            /><span class="msg"></span>
+          </div>
+          <div class="field">
+            <label for="tp">Phone</label
+            ><input id="tp" name="tp" type="tel" placeholder="+62 …" data-v="required,min:7" /><span
+              class="msg"
+            ></span>
+          </div>
+          <div class="field">
+            <label for="td">Date</label
+            ><input id="td" name="td" type="date" placeholder="" data-v="future" /><span
+              class="msg"
+            ></span>
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">BOOK A TOUR</button>
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--white">Frispes</a>
+          <p>
+            Comfortable spaces, cozy cafe, high-speed internet and spacious parking for your best
+            workspaces and meetings
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link"
+              ><img src="images/instagramicon.png" alt="Instagram" /></a>
+            <a href="#" class="footer__social-link"
+              ><img src="images/youtubeicon.png" alt="YouTube" /></a>
+            <a href="#" class="footer__social-link"
+              ><img src="images/facebookicon.png" alt="Facebook"
+            /></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workspace.html">Workspace</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__contact">
+            <li><span class="contact-label">E.</span> Hello@frispes.com</li>
+            <li><span class="contact-label">A.</span> Jalan Jayakatwang No.301 Ngasem, Kediri</li>
+            <li><span class="contact-label">P.</span> (+62) 82334670000</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="toast" id="toast"></div>
+    <script src="pages.js"></script>
+  </body>
+</html>

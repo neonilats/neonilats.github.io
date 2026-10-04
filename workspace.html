@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workspace – Frispes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER / NAV -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo">Frispes.</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="workspace.html" class="nav__link active">Workspace</a></li>
+            <li><a href="404.html" class="nav__link">Service</a></li>
+            <li><a href="events.html" class="nav__link">Events</a></li>
+            <li><a href="index.html#reviews" class="nav__link">Reviews</a></li>
+            <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="404.html" class="btn btn--ghost">Log In</a>
+          <a href="404.html" class="btn btn--primary">Sign Up</a>
+        </div>
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav__list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="workspace.html" class="mobile-nav__link">Workspace</a></li>
+        <li><a href="404.html" class="mobile-nav__link">Service</a></li>
+        <li><a href="events.html" class="mobile-nav__link">Events</a></li>
+        <li><a href="index.html#reviews" class="mobile-nav__link">Reviews</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
+        <li class="mobile-nav__actions">
+          <a href="404.html" class="btn btn--ghost">Log In</a>
+          <a href="404.html" class="btn btn--primary">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="ph" style="background-image: url(images/firstimage.png)">
+        <div class="container">
+          <p class="crumbs"><a href="index.html">Home</a> / Workspace</p>
+          <h1>Find the space that fits <span class="accent">the way you work</span></h1>
+          <p class="lead">
+            Private offices, shared desks and meeting rooms with 500 Mbps internet and free coffee.
+          </p>
+          <button class="btn btn--primary" data-open="m-book">BOOK A SPACE</button>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section class="sec">
+        <div class="container">
+          <div class="center">
+            <p class="eyebrow">Our Spaces <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Three ways to work at Frispes</h2>
+            <p class="lead2">Pick the format that matches your team and your day.</p>
+          </div>
+          <div class="cards3" style="margin-top: 40px">
+            <div class="tcard" style="background-image: url(images/ourspaceimage2.png)">
+              <div>
+                <i class="fa-solid fa-door-closed"></i>
+                <h3>Private office</h3>
+                <p>Lockable office for your team, branded your way.</p>
+                <button class="link" data-open="m-book" data-fill="space=Private office">
+                  Book now →
+                </button>
+              </div>
+            </div>
+            <div class="tcard" style="background-image: url(images/immersive1.png)">
+              <div>
+                <i class="fa-solid fa-users"></i>
+                <h3>Co-working space</h3>
+                <p>Hot desks in a bright hall with free coffee.</p>
+                <button class="link" data-open="m-book" data-fill="space=Co-working desk">
+                  Book now →
+                </button>
+              </div>
+            </div>
+            <div class="tcard" style="background-image: url(images/immersive4.png)">
+              <div>
+                <i class="fa-solid fa-display"></i>
+                <h3>Meeting room</h3>
+                <p>Projector, video-call kit and seats for 12.</p>
+                <button class="link" data-open="m-book" data-fill="space=Meeting room">
+                  Book now →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- LIGHT SECTION -->
+      <section class="sec sec--light">
+        <div class="container splitx">
+          <div class="pic">
+            <img
+              src="images/ourspaceimage1.png"
+              alt="Designed to give you a different experience"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <p class="eyebrow">Why Frispes <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Designed to give you a different experience</h2>
+            <p style="margin-top: 12px">
+              Natural light, quiet zones, a cozy cafe and a community of founders – everything a
+              growing startup needs under one roof.
+            </p>
+            <ul class="ticks">
+              <li>Full-speed Wi-Fi and secure parking</li>
+              <li>Free coffee &amp; snacks every day</li>
+              <li>Mentors and weekly community events</li>
+            </ul>
+            <button class="btn btn--primary" data-open="m-book">Check availability</button>
+          </div>
+        </div>
+      </section>
+      <!-- DARK SECTION -->
+      <section class="sec sec--navy">
+        <div class="container">
+          <div class="center">
+            <p class="eyebrow">Clear Price <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Simple plans, no hidden fees</h2>
+            <p class="lead2">Book by the hour. Get −15% when you reserve 8+ hours.</p>
+          </div>
+          <div class="plans" style="margin-top: 44px">
+            <div class="plan">
+              <h3>Hot Desk</h3>
+              <div class="pr">$8<small> /h</small></div>
+              <ul>
+                <li>Any free desk</li>
+                <li>500 Mbps Wi-Fi</li>
+                <li>Free coffee</li>
+              </ul>
+              <button class="btn btn--primary" data-open="m-book" data-fill="space=Co-working desk">
+                Choose plan
+              </button>
+            </div>
+            <div class="plan plan--hot">
+              <span class="badge">Popular</span>
+              <h3>Team Space</h3>
+              <div class="pr">$12<small> /h</small></div>
+              <ul>
+                <li>Up to 10 people</li>
+                <li>Whiteboard wall</li>
+                <li>Free coffee &amp; snacks</li>
+                <li>Parking</li>
+              </ul>
+              <button class="btn btn--primary" data-open="m-book" data-fill="space=Team space">
+                Choose plan
+              </button>
+            </div>
+            <div class="plan">
+              <h3>Private Office</h3>
+              <div class="pr">$25<small> /h</small></div>
+              <ul>
+                <li>Lockable room</li>
+                <li>Branded door</li>
+                <li>Meeting hours incl.</li>
+                <li>24/7 access</li>
+              </ul>
+              <button class="btn btn--primary" data-open="m-book" data-fill="space=Private office">
+                Choose plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section class="sec">
+        <div class="container stats4">
+          <div><strong>500+</strong><span>Meeting rooms</span></div>
+          <div><strong>500 Mbps</strong><span>Internet speed</span></div>
+          <div><strong>5K+</strong><span>Startup mentors</span></div>
+          <div><strong>200+</strong><span>Communities</span></div>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section class="sec">
+        <div class="container">
+          <!-- CTA: photo background, centered -->
+          <div class="cta cta--photo">
+            <p class="eyebrow">Became a member <span class="eyebrow__line"></span></p>
+            <h2>Ready to try a different work experience?</h2>
+            <p>Get the best working experience that you never feel before</p>
+            <button class="btn btn--primary" data-open="m-book">BOOK YOUR FIRST DAY</button>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL -->
+      <div class="modal" id="m-book">
+        <form
+          id="fmBook"
+          class="formbox"
+          data-form
+          data-ok="Бронювання надіслано! Підтвердження прийде на email."
+          novalidate
+        >
+          <button type="button" class="mx">&times;</button>
+          <h3>Book a space</h3>
+          <div class="field">
+            <label for="space">Space</label
+            ><select id="space" name="space">
+              <option data-p="12" value="Team space">Team space – $12/h</option>
+              <option data-p="25" value="Private office">Private office – $25/h</option>
+              <option data-p="8" value="Co-working desk">Co-working desk – $8/h</option>
+              <option data-p="30" value="Meeting room">Meeting room – $30/h</option>
+            </select>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="date">Date</label
+              ><input id="date" name="date" type="date" placeholder="" data-v="future" /><span
+                class="msg"
+              ></span>
+            </div>
+            <div class="field">
+              <label for="hours">Hours</label
+              ><input
+                id="hours"
+                name="hours"
+                type="number"
+                placeholder=""
+                data-v="required"
+                min="1"
+                max="12"
+                value="2"
+              /><span class="msg"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="seats">Seats</label
+              ><input
+                id="seats"
+                name="seats"
+                type="number"
+                placeholder=""
+                data-v="required"
+                min="1"
+                max="20"
+                value="1"
+              /><span class="msg"></span>
+            </div>
+            <div class="field">
+              <label for="name">Full name</label
+              ><input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="John Smith"
+                data-v="required,min:3"
+              /><span class="msg"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@company.com"
+              data-v="required,email"
+            /><span class="msg"></span>
+          </div>
+          <div class="total"><span>Estimated total</span><b id="total">$0</b></div>
+          <button class="btn btn--primary btn--full" type="submit">BOOK NOW</button>
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--white">Frispes</a>
+          <p>
+            Comfortable spaces, cozy cafe, high-speed internet and spacious parking for your best
+            workspaces and meetings
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link"
+              ><img src="images/instagramicon.png" alt="Instagram" /></a>
+            <a href="#" class="footer__social-link"
+              ><img src="images/youtubeicon.png" alt="YouTube" /></a>
+            <a href="#" class="footer__social-link"
+              ><img src="images/facebookicon.png" alt="Facebook"
+            /></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workspace.html">Workspace</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__contact">
+            <li><span class="contact-label">E.</span> Hello@frispes.com</li>
+            <li><span class="contact-label">A.</span> Jalan Jayakatwang No.301 Ngasem, Kediri</li>
+            <li><span class="contact-label">P.</span> (+62) 82334670000</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="toast" id="toast"></div>
+    <script src="pages.js"></script>
+  </body>
+</html>

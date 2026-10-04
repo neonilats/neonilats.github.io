@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events – Frispes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER / NAV -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="index.html" class="logo">Frispes.</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="workspace.html" class="nav__link">Workspace</a></li>
+            <li><a href="404.html" class="nav__link">Service</a></li>
+            <li><a href="events.html" class="nav__link active">Events</a></li>
+            <li><a href="index.html#reviews" class="nav__link">Reviews</a></li>
+            <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="404.html" class="btn btn--ghost">Log In</a>
+          <a href="404.html" class="btn btn--primary">Sign Up</a>
+        </div>
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav__list">
+        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+        <li><a href="workspace.html" class="mobile-nav__link">Workspace</a></li>
+        <li><a href="404.html" class="mobile-nav__link">Service</a></li>
+        <li><a href="events.html" class="mobile-nav__link">Events</a></li>
+        <li><a href="index.html#reviews" class="mobile-nav__link">Reviews</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
+        <li class="mobile-nav__actions">
+          <a href="404.html" class="btn btn--ghost">Log In</a>
+          <a href="404.html" class="btn btn--primary">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="ph" style="background-image: url(images/news4.png)">
+        <div class="container">
+          <p class="crumbs"><a href="index.html">Home</a> / Events</p>
+          <h1>News, events <span class="accent">and insights</span> for you</h1>
+          <p class="lead">Meet the community, learn from mentors and grow your startup with us.</p>
+          <button class="btn btn--primary" data-open="m-host">HOST AN EVENT</button>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section class="sec">
+        <div class="container">
+          <p class="eyebrow">Featured <span class="eyebrow__line"></span></p>
+          <h2 class="section-title">Don't miss these events</h2>
+          <div class="swiper" id="swiper" style="margin-top: 30px">
+            <div class="swiper__track">
+              <div class="slide">
+                <img src="images/news1.png" alt="Google I/O watch party" />
+                <div class="slide__txt">
+                  <span class="tag">Tech</span>
+                  <h3>Google I/O watch party</h3>
+                  <p>Watch the keynote live on the big screen with local developers.</p>
+                  <button
+                    class="btn btn--primary btn--sm"
+                    data-open="m-reg"
+                    data-ev="Google I/O watch party"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/news2.png" alt="Minimal workspace for inspiration" />
+                <div class="slide__txt">
+                  <span class="tag">Design</span>
+                  <h3>Minimal workspace for inspiration</h3>
+                  <p>A talk on calm, productive desks with live Q&amp;A.</p>
+                  <button
+                    class="btn btn--primary btn--sm"
+                    data-open="m-reg"
+                    data-ev="Minimal workspace for inspiration"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/news3.png" alt="Remote vs office productivity" />
+                <div class="slide__txt">
+                  <span class="tag">Talks</span>
+                  <h3>Remote vs office productivity</h3>
+                  <p>Panel: does productivity really grow when working remotely?</p>
+                  <button
+                    class="btn btn--primary btn--sm"
+                    data-open="m-reg"
+                    data-ev="Remote vs office productivity"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/news4.png" alt="Morning routine workshop" />
+                <div class="slide__txt">
+                  <span class="tag">Wellness</span>
+                  <h3>Morning routine workshop</h3>
+                  <p>Hands-on habits that boost your mood and focus.</p>
+                  <button
+                    class="btn btn--primary btn--sm"
+                    data-open="m-reg"
+                    data-ev="Morning routine workshop"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper__ctl">
+            <div class="slider-dots" id="swDots" style="margin: 0"></div>
+            <div class="slider-arrows">
+              <button class="arrow arrow--prev" id="swPrev" aria-label="Prev">&#8592;</button
+              ><button class="arrow arrow--next" id="swNext" aria-label="Next">&#8594;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- LIGHT SECTION -->
+      <section class="sec sec--light">
+        <div class="container">
+          <div class="center">
+            <p class="eyebrow">Calendar <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Upcoming events</h2>
+          </div>
+          <div class="filters" data-filter=".ev">
+            <button class="chip active" data-f="all">All</button
+            ><button class="chip" data-f="Tech">Tech</button
+            ><button class="chip" data-f="Design">Design</button
+            ><button class="chip" data-f="Talks">Talks</button
+            ><button class="chip" data-f="Wellness">Wellness</button>
+          </div>
+          <div style="max-width: 860px; margin: 0 auto">
+            <div class="ev" data-cat="Tech">
+              <time><b>12</b>NOV</time>
+              <h3>Google I/O watch party</h3>
+              <p>Watch the keynote live on the big screen with local developers.</p>
+              <button
+                class="btn btn--ghost btn--sm"
+                data-open="m-reg"
+                data-ev="Google I/O watch party"
+              >
+                Register
+              </button>
+            </div>
+            <div class="ev" data-cat="Design">
+              <time><b>18</b>NOV</time>
+              <h3>Minimal workspace for inspiration</h3>
+              <p>A talk on calm, productive desks with live Q&amp;A.</p>
+              <button
+                class="btn btn--ghost btn--sm"
+                data-open="m-reg"
+                data-ev="Minimal workspace for inspiration"
+              >
+                Register
+              </button>
+            </div>
+            <div class="ev" data-cat="Talks">
+              <time><b>25</b>NOV</time>
+              <h3>Remote vs office productivity</h3>
+              <p>Panel: does productivity really grow when working remotely?</p>
+              <button
+                class="btn btn--ghost btn--sm"
+                data-open="m-reg"
+                data-ev="Remote vs office productivity"
+              >
+                Register
+              </button>
+            </div>
+            <div class="ev" data-cat="Wellness">
+              <time><b>02</b>DEC</time>
+              <h3>Morning routine workshop</h3>
+              <p>Hands-on habits that boost your mood and focus.</p>
+              <button
+                class="btn btn--ghost btn--sm"
+                data-open="m-reg"
+                data-ev="Morning routine workshop"
+              >
+                Register
+              </button>
+            </div>
+            <div class="ev" data-cat="Talks">
+              <time><b>09</b>DEC</time>
+              <h3>How to find your co-working</h3>
+              <p>5+ tips for choosing a comfortable co-working space.</p>
+              <button
+                class="btn btn--ghost btn--sm"
+                data-open="m-reg"
+                data-ev="How to find your co-working"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section class="sec">
+        <div class="container splitx rev">
+          <div class="pic">
+            <img src="images/immersive2.png" alt="Host your own event at Frispes" loading="lazy" />
+          </div>
+          <div>
+            <p class="eyebrow">For teams <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Host your own event at Frispes</h2>
+            <p style="margin-top: 12px">
+              Meetups, workshops, demo days – we provide the room, the equipment and the cafe. You
+              bring the people.
+            </p>
+            <ul class="ticks">
+              <li>Spaces for 20 to 200 guests</li>
+              <li>Projector, sound and stream kit</li>
+              <li>Catering from our cozy cafe</li>
+            </ul>
+            <button class="btn btn--primary" data-open="m-host">Request a quote</button>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION -->
+      <section class="sec">
+        <div class="container">
+          <!-- CTA: orange block with button on the right -->
+          <div class="cta cta--orange">
+            <div>
+              <h2>Never miss a Frispes event again</h2>
+              <p>One short email a week: new talks, workshops and community meetups.</p>
+            </div>
+            <button class="btn btn--dark" data-open="m-news">SUBSCRIBE</button>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL -->
+      <div class="modal" id="m-reg">
+        <form class="formbox" data-form data-ok="Ви зареєстровані! Перевірте пошту." novalidate>
+          <button type="button" class="mx">&times;</button>
+          <h3>Register for the event</h3>
+          <p class="tag" id="evName" style="margin-bottom: 14px"></p>
+          <div class="field">
+            <label for="rn">Full name</label
+            ><input
+              id="rn"
+              name="rn"
+              type="text"
+              placeholder="John Smith"
+              data-v="required,min:3"
+            /><span class="msg"></span>
+          </div>
+          <div class="field">
+            <label for="re">Email</label
+            ><input
+              id="re"
+              name="re"
+              type="email"
+              placeholder="you@company.com"
+              data-v="required,email"
+            /><span class="msg"></span>
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">CONFIRM</button>
+        </form>
+      </div>
+      <!-- MODAL -->
+      <div class="modal" id="m-host">
+        <form
+          class="formbox"
+          data-form
+          data-ok="Запит надіслано! Ми звʼяжемось із вами."
+          novalidate
+        >
+          <button type="button" class="mx">&times;</button>
+          <h3>Host an event</h3>
+          <div class="field">
+            <label for="hn">Your name</label
+            ><input
+              id="hn"
+              name="hn"
+              type="text"
+              placeholder="Your name"
+              data-v="required,min:3"
+            /><span class="msg"></span>
+          </div>
+          <div class="field">
+            <label for="he">Email</label
+            ><input
+              id="he"
+              name="he"
+              type="email"
+              placeholder="you@company.com"
+              data-v="required,email"
+            /><span class="msg"></span>
+          </div>
+          <div class="field">
+            <label for="hg">Guests</label
+            ><input
+              id="hg"
+              name="hg"
+              type="number"
+              placeholder=""
+              data-v="required"
+              min="5"
+              value="30"
+            /><span class="msg"></span>
+          </div>
+          <div class="field">
+            <label for="hd">Date</label
+            ><input id="hd" name="hd" type="date" placeholder="" data-v="future" /><span
+              class="msg"
+            ></span>
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">SEND REQUEST</button>
+        </form>
+      </div>
+      <!-- MODAL -->
+      <div class="modal" id="m-news">
+        <form class="formbox" data-form data-ok="Ви підписані на новини Frispes!" novalidate>
+          <button type="button" class="mx">&times;</button>
+          <h3>Subscribe to events</h3>
+          <div class="field">
+            <label for="ne">Email</label
+            ><input
+              id="ne"
+              name="ne"
+              type="email"
+              placeholder="you@company.com"
+              data-v="required,email"
+            /><span class="msg"></span>
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--white">Frispes</a>
+          <p>
+            Comfortable spaces, cozy cafe, high-speed internet and spacious parking for your best
+            workspaces and meetings
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link"
+              ><img src="images/instagramicon.png" alt="Instagram" /></a>
+            <a href="#" class="footer__social-link"
+              ><img src="images/youtubeicon.png" alt="YouTube" /></a>
+            <a href="#" class="footer__social-link"
+              ><img src="images/facebookicon.png" alt="Facebook"
+            /></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workspace.html">Workspace</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__contact">
+            <li><span class="contact-label">E.</span> Hello@frispes.com</li>
+            <li><span class="contact-label">A.</span> Jalan Jayakatwang No.301 Ngasem, Kediri</li>
+            <li><span class="contact-label">P.</span> (+62) 82334670000</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="toast" id="toast"></div>
+    <script src="pages.js"></script>
+  </body>
+</html>

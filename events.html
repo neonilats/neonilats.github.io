@@ -71,68 +71,7 @@
           <p class="eyebrow">Featured <span class="eyebrow__line"></span></p>
           <h2 class="section-title">Don't miss these events</h2>
           <div class="swiper" id="swiper" style="margin-top: 30px">
-            <div class="swiper__track">
-              <div class="slide">
-                <img src="images/news1.png" alt="Google I/O watch party" />
-                <div class="slide__txt">
-                  <span class="tag">Tech</span>
-                  <h3>Google I/O watch party</h3>
-                  <p>Watch the keynote live on the big screen with local developers.</p>
-                  <button
-                    class="btn btn--primary btn--sm"
-                    data-open="m-reg"
-                    data-ev="Google I/O watch party"
-                  >
-                    Register
-                  </button>
-                </div>
-              </div>
-              <div class="slide">
-                <img src="images/news2.png" alt="Minimal workspace for inspiration" />
-                <div class="slide__txt">
-                  <span class="tag">Design</span>
-                  <h3>Minimal workspace for inspiration</h3>
-                  <p>A talk on calm, productive desks with live Q&amp;A.</p>
-                  <button
-                    class="btn btn--primary btn--sm"
-                    data-open="m-reg"
-                    data-ev="Minimal workspace for inspiration"
-                  >
-                    Register
-                  </button>
-                </div>
-              </div>
-              <div class="slide">
-                <img src="images/news3.png" alt="Remote vs office productivity" />
-                <div class="slide__txt">
-                  <span class="tag">Talks</span>
-                  <h3>Remote vs office productivity</h3>
-                  <p>Panel: does productivity really grow when working remotely?</p>
-                  <button
-                    class="btn btn--primary btn--sm"
-                    data-open="m-reg"
-                    data-ev="Remote vs office productivity"
-                  >
-                    Register
-                  </button>
-                </div>
-              </div>
-              <div class="slide">
-                <img src="images/news4.png" alt="Morning routine workshop" />
-                <div class="slide__txt">
-                  <span class="tag">Wellness</span>
-                  <h3>Morning routine workshop</h3>
-                  <p>Hands-on habits that boost your mood and focus.</p>
-                  <button
-                    class="btn btn--primary btn--sm"
-                    data-open="m-reg"
-                    data-ev="Morning routine workshop"
-                  >
-                    Register
-                  </button>
-                </div>
-              </div>
-            </div>
+            <div class="swiper__track" id="swTrack"></div>
           </div>
           <div class="swiper__ctl">
             <div class="slider-dots" id="swDots" style="margin: 0"></div>
@@ -150,75 +89,8 @@
             <p class="eyebrow">Calendar <span class="eyebrow__line"></span></p>
             <h2 class="section-title">Upcoming events</h2>
           </div>
-          <div class="filters" data-filter=".ev">
-            <button class="chip active" data-f="all">All</button
-            ><button class="chip" data-f="Tech">Tech</button
-            ><button class="chip" data-f="Design">Design</button
-            ><button class="chip" data-f="Talks">Talks</button
-            ><button class="chip" data-f="Wellness">Wellness</button>
-          </div>
-          <div style="max-width: 860px; margin: 0 auto">
-            <div class="ev" data-cat="Tech">
-              <time><b>12</b>NOV</time>
-              <h3>Google I/O watch party</h3>
-              <p>Watch the keynote live on the big screen with local developers.</p>
-              <button
-                class="btn btn--ghost btn--sm"
-                data-open="m-reg"
-                data-ev="Google I/O watch party"
-              >
-                Register
-              </button>
-            </div>
-            <div class="ev" data-cat="Design">
-              <time><b>18</b>NOV</time>
-              <h3>Minimal workspace for inspiration</h3>
-              <p>A talk on calm, productive desks with live Q&amp;A.</p>
-              <button
-                class="btn btn--ghost btn--sm"
-                data-open="m-reg"
-                data-ev="Minimal workspace for inspiration"
-              >
-                Register
-              </button>
-            </div>
-            <div class="ev" data-cat="Talks">
-              <time><b>25</b>NOV</time>
-              <h3>Remote vs office productivity</h3>
-              <p>Panel: does productivity really grow when working remotely?</p>
-              <button
-                class="btn btn--ghost btn--sm"
-                data-open="m-reg"
-                data-ev="Remote vs office productivity"
-              >
-                Register
-              </button>
-            </div>
-            <div class="ev" data-cat="Wellness">
-              <time><b>02</b>DEC</time>
-              <h3>Morning routine workshop</h3>
-              <p>Hands-on habits that boost your mood and focus.</p>
-              <button
-                class="btn btn--ghost btn--sm"
-                data-open="m-reg"
-                data-ev="Morning routine workshop"
-              >
-                Register
-              </button>
-            </div>
-            <div class="ev" data-cat="Talks">
-              <time><b>09</b>DEC</time>
-              <h3>How to find your co-working</h3>
-              <p>5+ tips for choosing a comfortable co-working space.</p>
-              <button
-                class="btn btn--ghost btn--sm"
-                data-open="m-reg"
-                data-ev="How to find your co-working"
-              >
-                Register
-              </button>
-            </div>
-          </div>
+          <div class="filters" data-filter=".ev" id="filters"></div>
+          <div id="eventList" style="max-width: 860px; margin: 0 auto"></div>
         </div>
       </section>
       <!-- SECTION -->
@@ -329,7 +201,7 @@
           </div>
           <div class="field">
             <label for="hd">Date</label
-            ><input id="hd" name="hd" type="date" placeholder="" data-v="future" /><span
+            ><input id="hd" name="hd" type="date" data-v="future" /><span
               class="msg"
             ></span>
           </div>
@@ -356,7 +228,7 @@
       </div>
     </main>
     <!-- FOOTER -->
-   <footer class="footer">
+  <footer class="footer">
   <div class="container footer__inner">
     <div class="footer__brand">
       <a href="#" class="logo logo--white">Frispes</a>
@@ -412,6 +284,7 @@
   </div>
 </footer>
     <div class="toast" id="toast"></div>
+    <script src="events-data.js"></script>
     <script src="pages.js"></script>
   </body>
 </html>

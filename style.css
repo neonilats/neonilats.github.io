@@ -1320,7 +1320,7 @@ section.stats-why {
 }
 
 /* Columns */
-.footer__col h4 {
+.footer__col h3 {
   color: var(--white);
   font-size: 15px;
   font-weight: 700;

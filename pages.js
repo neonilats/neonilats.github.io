@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-
+   
   /* ---- FAQ ACCORDION (Contact) ---- */
   const faqItems = document.querySelectorAll('.acc__i');
 

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ---- GENERIC SLIDER FACTORY ---- */
-  function makeSlider({ sliderId, prevBtn, nextBtn, dotsId, visibleFn }) {
+  function makeSlider({ sliderId, prevBtn, nextBtn, dotsId, visibleFn, onChange }) {
     const slider = document.getElementById(sliderId);
     const dotsEl = document.getElementById(dotsId);
     const prev   = document.getElementById(prevBtn);
@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const gap   = 20;
       slider.style.transform = `translateX(-${current * (cardW + gap)}px)`;
       slider.style.transition = 'transform .4s ease';
+      if (typeof onChange === 'function') onChange(current, maxIndex() + 1);
 
       if (dotsEl) {
         const total = maxIndex() + 1;
@@ -88,13 +89,34 @@ document.addEventListener('DOMContentLoaded', () => {
   if (spacesSlider) {
     spacesSlider.style.display = 'flex';
     spacesSlider.style.gap     = '20px';
-    spacesSlider.style.overflow = 'hidden';
+    // overflow:hidden лишається на .spaces__track-wrap, інакше зсунуті слайди обрізаються
   }
+  const spacesBar   = document.getElementById('spacesBar');
+  const spacesIdx   = document.getElementById('spacesIdx');
+  const spacesTotal = document.getElementById('spacesTotal');
+  const spacesPrev  = document.getElementById('spacesPrev');
+  const spacesNext  = document.getElementById('spacesNext');
+  const pad = n => String(n).padStart(2, '0');
+
   makeSlider({
     sliderId: 'spacesSlider',
     prevBtn:  'spacesPrev',
     nextBtn:  'spacesNext',
     dotsId:   'spacesDots',
+    // має збігатися з flex-basis карток у style.css
+    visibleFn: () => {
+      const w = window.innerWidth;
+      if (w >= 769) return 3;
+      if (w >= 481) return 2;
+      return 1;
+    },
+    onChange: (current, total) => {
+      if (spacesIdx)   spacesIdx.textContent   = pad(current + 1);
+      if (spacesTotal) spacesTotal.textContent = pad(total);
+      if (spacesBar)   spacesBar.style.width   = ((current + 1) / total * 100) + '%';
+      if (spacesPrev)  spacesPrev.style.opacity = current === 0 ? '.35' : '';
+      if (spacesNext)  spacesNext.style.opacity = current === total - 1 ? '.35' : '';
+    }
   });
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('#facilityTabs .tab-item');

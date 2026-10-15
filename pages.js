@@ -298,4 +298,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Кнопка «Мені пощастить»: перед переходом підставляє випадкову сторінку (серед них і 404)
+  const luckyLink = document.getElementById('luckyLink');
+  if (luckyLink) {
+    const luckyPages = ['workspace.html', 'events.html', 'contact.html', '404.html'];
+    luckyLink.addEventListener('click', () => {
+      luckyLink.href = luckyPages[Math.floor(Math.random() * luckyPages.length)];
+    });
+  }
+
 });

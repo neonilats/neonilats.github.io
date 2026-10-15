@@ -90,7 +90,7 @@
             </div>
             <div class="search__field">
               <label for="search-date">Дата</label>
-              <input id="search-date" type="date" value="2026-15-10" />
+              <input id="search-date" type="date" value="2020-08-09" />
             </div>
             <button class="btn btn--primary btn--full">ЗНАЙТИ ПРОСТІР</button>
           </div>
@@ -146,24 +146,40 @@
 
         <div class="scard scard--img">
           <div class="scard__img-wrap">
-            <img src="images/ourspaceimage3.png" alt="Коворкінг-простір" />
+            <img src="images/immersive1.png" alt="Коворкінг-простір" />
             <button class="scard__arrow">&#8250;</button>
           </div>
           <p class="scard__label">Коворкінг-простір</p>
         </div>
 
+        <div class="scard scard--img">
+          <div class="scard__img-wrap">
+            <img src="images/immersive4.png" alt="Переговорна кімната" />
+            <button class="scard__arrow">&#8250;</button>
+          </div>
+          <p class="scard__label">Переговорна кімната</p>
+        </div>
+
+        <div class="scard scard--img">
+          <div class="scard__img-wrap">
+            <img src="images/immersive3.png" alt="Відкритий офіс" />
+            <button class="scard__arrow">&#8250;</button>
+          </div>
+          <p class="scard__label">Відкритий офіс</p>
+        </div>
+
       </div>
     </div>
-    
-  </div>
-</section>
 
     <div class="spaces__footer">
       <div class="spaces__progress">
         <div class="spaces__progress-bar" id="spacesBar"></div>
       </div>
-      <p class="spaces__counter"><strong id="spacesIdx">01</strong> / 04</p>
+      <p class="spaces__counter"><strong id="spacesIdx">01</strong> / <span id="spacesTotal">04</span></p>
     </div>
+
+  </div>
+</section>
 
     <!-- STATS + WHY FRISPES -->
  <section class="stats-why" id="about">
@@ -488,24 +504,26 @@
         <li>Преса</li>
       </ul>
     </div>
-        <div class="footer__col">
+    <div class="footer__col">
       <h3>Підтримка</h3>
       <ul>
-        <li><a href="contact.html#faq">Часті питання</a></li>
+        <li><a href="contact.html#faq">Часті запитання</a></li>
         <li>Політика конфіденційності</li>
         <li><a href="contact.html#faq">Допомога</a></li>
+        <li><a href="workspace.html" id="luckyLink">Мені пощастить</a></li>
       </ul>
     </div>
     <div class="footer__col">
       <h3>Контакти</h3>
       <ul class="footer__contact">
         <li><span class="contact-label">E.</span> Hello@frispes.com</li>
-        <li><span class="contact-label">A.</span> Jalan Jayakatwang No.301 Ngasem, Kediri</li>
+        <li><span class="contact-label">A.</span> вул. Джакатванг №301 Нгасем, Кедірі</li>
         <li><span class="contact-label">P.</span> (+62) 82334670000</li>
       </ul>
     </div>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

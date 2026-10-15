@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events – Frispes</title>
+    <title>Події – Frispes</title>
+    <meta name="description" content="Календар подій Frispes: технологічні зустрічі, лекції з дизайну, воркшопи й дискусії для спільноти коворкінгу. Зареєструйтеся онлайн." />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="pages.css" />
     <link
@@ -22,19 +23,18 @@
         <a href="index.html" class="logo">Frispes.</a>
         <nav class="nav">
           <ul class="nav__list">
-            <li><a href="index.html" class="nav__link">Home</a></li>
-            <li><a href="workspace.html" class="nav__link">Workspace</a></li>
-            <li><a href="404.html" class="nav__link">Service</a></li>
-            <li><a href="events.html" class="nav__link active">Events</a></li>
-            <li><a href="index.html#reviews" class="nav__link">Reviews</a></li>
-            <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+            <li><a href="index.html" class="nav__link">Головна</a></li>
+            <li><a href="workspace.html" class="nav__link">Робочі простори</a></li>
+            <li><a href="events.html" class="nav__link active">Події</a></li>
+            <li><a href="index.html#reviews" class="nav__link">Відгуки</a></li>
+            <li><a href="contact.html" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
         <div class="header__actions">
-          <a href="404.html" class="btn btn--ghost">Log In</a>
-          <a href="404.html" class="btn btn--primary">Sign Up</a>
+          <a href="404.html" class="btn btn--ghost">Увійти</a>
+          <a href="contact.html" class="btn btn--primary">Зареєструватися</a>
         </div>
-        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <button class="burger" id="burger" aria-label="Переключити меню" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -42,15 +42,14 @@
     <!-- MOBILE NAV -->
     <div class="mobile-nav" id="mobileNav">
       <ul class="mobile-nav__list">
-        <li><a href="index.html" class="mobile-nav__link">Home</a></li>
-        <li><a href="workspace.html" class="mobile-nav__link">Workspace</a></li>
-        <li><a href="404.html" class="mobile-nav__link">Service</a></li>
-        <li><a href="events.html" class="mobile-nav__link">Events</a></li>
-        <li><a href="index.html#reviews" class="mobile-nav__link">Reviews</a></li>
-        <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
+        <li><a href="index.html" class="mobile-nav__link">Головна</a></li>
+        <li><a href="workspace.html" class="mobile-nav__link">Робочі простори</a></li>
+        <li><a href="events.html" class="mobile-nav__link">Події</a></li>
+        <li><a href="index.html#reviews" class="mobile-nav__link">Відгуки</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Контакти</a></li>
         <li class="mobile-nav__actions">
-          <a href="404.html" class="btn btn--ghost">Log In</a>
-          <a href="404.html" class="btn btn--primary">Sign Up</a>
+          <a href="404.html" class="btn btn--ghost">Увійти</a>
+          <a href="contact.html" class="btn btn--primary">Зареєструватися</a>
         </li>
       </ul>
     </div>
@@ -59,25 +58,25 @@
       <!-- HERO -->
       <section class="ph" style="background-image: url(images/news4.png)">
         <div class="container">
-          <p class="crumbs"><a href="index.html">Home</a> / Events</p>
-          <h1>News, events <span class="accent">and insights</span> for you</h1>
-          <p class="lead">Meet the community, learn from mentors and grow your startup with us.</p>
-          <button class="btn btn--primary" data-open="m-host">HOST AN EVENT</button>
+          <p class="crumbs"><a href="index.html">Головна</a> / Події</p>
+          <h1>Новини, події <span class="accent">та інсайти</span> для вас</h1>
+          <p class="lead">Знайомтеся зі спільнотою, навчайтеся у менторів та розвивайте свій стартап разом із нами.</p>
+          <button class="btn btn--primary" data-open="m-host">ОРГАНІЗУВАТИ ПОДІЮ</button>
         </div>
       </section>
       <!-- SECTION -->
       <section class="sec">
         <div class="container">
-          <p class="eyebrow">Featured <span class="eyebrow__line"></span></p>
-          <h2 class="section-title">Don't miss these events</h2>
+          <p class="eyebrow">Рекомендоване <span class="eyebrow__line"></span></p>
+          <h2 class="section-title">Не пропустіть ці події</h2>
           <div class="swiper" id="swiper" style="margin-top: 30px">
             <div class="swiper__track" id="swTrack"></div>
           </div>
           <div class="swiper__ctl">
             <div class="slider-dots" id="swDots" style="margin: 0"></div>
             <div class="slider-arrows">
-              <button class="arrow arrow--prev" id="swPrev" aria-label="Prev">&#8592;</button
-              ><button class="arrow arrow--next" id="swNext" aria-label="Next">&#8594;</button>
+              <button class="arrow arrow--prev" id="swPrev" aria-label="Назад">&#8592;</button
+              ><button class="arrow arrow--next" id="swNext" aria-label="Вперед">&#8594;</button>
             </div>
           </div>
         </div>
@@ -86,8 +85,8 @@
       <section class="sec sec--light">
         <div class="container">
           <div class="center">
-            <p class="eyebrow">Calendar <span class="eyebrow__line"></span></p>
-            <h2 class="section-title">Upcoming events</h2>
+            <p class="eyebrow">Календар <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Майбутні події</h2>
           </div>
           <div class="filters" data-filter=".ev" id="filters"></div>
           <div id="eventList" style="max-width: 860px; margin: 0 auto"></div>
@@ -97,21 +96,21 @@
       <section class="sec">
         <div class="container splitx rev">
           <div class="pic">
-            <img src="images/immersive2.png" alt="Host your own event at Frispes" loading="lazy" />
+            <img src="images/immersive2.png" alt="Проведіть власну подію у Frispes" loading="lazy" />
           </div>
           <div>
-            <p class="eyebrow">For teams <span class="eyebrow__line"></span></p>
-            <h2 class="section-title">Host your own event at Frispes</h2>
+            <p class="eyebrow">Для команд <span class="eyebrow__line"></span></p>
+            <h2 class="section-title">Проведіть власну подію у Frispes</h2>
             <p style="margin-top: 12px">
-              Meetups, workshops, demo days – we provide the room, the equipment and the cafe. You
-              bring the people.
+              Мітапи, воркшопи, демо-дні — ми надаємо приміщення, обладнання та кав'ярню. Ви
+              приводите людей.
             </p>
             <ul class="ticks">
-              <li>Spaces for 20 to 200 guests</li>
-              <li>Projector, sound and stream kit</li>
-              <li>Catering from our cozy cafe</li>
+              <li>Простори від 20 до 200 гостей</li>
+              <li>Проектор, звук та комплект для стрімінгу</li>
+              <li>Кейтеринг з нашої затишної кав'ярні</li>
             </ul>
-            <button class="btn btn--primary" data-open="m-host">Request a quote</button>
+            <button class="btn btn--primary" data-open="m-host">Запитувати розрахунок</button>
           </div>
         </div>
       </section>
@@ -121,10 +120,10 @@
           <!-- CTA: orange block with button on the right -->
           <div class="cta cta--orange">
             <div>
-              <h2>Never miss a Frispes event again</h2>
-              <p>One short email a week: new talks, workshops and community meetups.</p>
+              <h2>Ніколи більше не пропускайте події Frispes</h2>
+              <p>Один короткий лист на тиждень: нові лекції, воркшопи та зустрічі спільноти.</p>
             </div>
-            <button class="btn btn--dark" data-open="m-news">SUBSCRIBE</button>
+            <button class="btn btn--dark" data-open="m-news">ПІДПИСАТИСЯ</button>
           </div>
         </div>
       </section>
@@ -132,15 +131,15 @@
       <div class="modal" id="m-reg">
         <form class="formbox" data-form data-ok="Ви зареєстровані! Перевірте пошту." novalidate>
           <button type="button" class="mx">&times;</button>
-          <h3>Register for the event</h3>
+          <h3>Реєстрація на подію</h3>
           <p class="tag" id="evName" style="margin-bottom: 14px"></p>
           <div class="field">
-            <label for="rn">Full name</label
+            <label for="rn">Повне ім'я</label
             ><input
               id="rn"
               name="rn"
               type="text"
-              placeholder="John Smith"
+              placeholder="Іван Іванов"
               data-v="required,min:3"
             /><span class="msg"></span>
           </div>
@@ -154,7 +153,7 @@
               data-v="required,email"
             /><span class="msg"></span>
           </div>
-          <button class="btn btn--primary btn--full" type="submit">CONFIRM</button>
+          <button class="btn btn--primary btn--full" type="submit">ПІДТВЕРДИТИ</button>
         </form>
       </div>
       <!-- MODAL -->
@@ -166,14 +165,14 @@
           novalidate
         >
           <button type="button" class="mx">&times;</button>
-          <h3>Host an event</h3>
+          <h3>Організувати подію</h3>
           <div class="field">
-            <label for="hn">Your name</label
+            <label for="hn">Ваше ім'я</label
             ><input
               id="hn"
               name="hn"
               type="text"
-              placeholder="Your name"
+              placeholder="Ваше ім'я"
               data-v="required,min:3"
             /><span class="msg"></span>
           </div>
@@ -188,7 +187,7 @@
             /><span class="msg"></span>
           </div>
           <div class="field">
-            <label for="hg">Guests</label
+            <label for="hg">Кількість гостей</label
             ><input
               id="hg"
               name="hg"
@@ -200,19 +199,19 @@
             /><span class="msg"></span>
           </div>
           <div class="field">
-            <label for="hd">Date</label
+            <label for="hd">Дата</label
             ><input id="hd" name="hd" type="date" data-v="future" /><span
               class="msg"
             ></span>
           </div>
-          <button class="btn btn--primary btn--full" type="submit">SEND REQUEST</button>
+          <button class="btn btn--primary btn--full" type="submit">НАДІСЛАТИ ЗАПИТ</button>
         </form>
       </div>
       <!-- MODAL -->
       <div class="modal" id="m-news">
         <form class="formbox" data-form data-ok="Ви підписані на новини Frispes!" novalidate>
           <button type="button" class="mx">&times;</button>
-          <h3>Subscribe to events</h3>
+          <h3>Підписка на події</h3>
           <div class="field">
             <label for="ne">Email</label
             ><input
@@ -223,7 +222,7 @@
               data-v="required,email"
             /><span class="msg"></span>
           </div>
-          <button class="btn btn--primary btn--full" type="submit">SUBSCRIBE</button>
+          <button class="btn btn--primary btn--full" type="submit">ПІДПИСАТИСЯ</button>
         </form>
       </div>
     </main>
@@ -231,53 +230,54 @@
   <footer class="footer">
   <div class="container footer__inner">
     <div class="footer__brand">
-      <a href="#" class="logo logo--white">Frispes</a>
-      <p>We offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many more for your best workspaces and meetings</p>
+      <a href="index.html" class="logo logo--white">Frispes</a>
+      <p>Ми пропонуємо комфортні простори, затишне кафе, високошвидкісний інтернет, простору парковку та багато іншого для ваших найкращих робочих місць і зустрічей</p>
     <div class="footer__socials">
-  <a href="#" aria-label="Instagram" class="footer__social-link">
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
     <img src="images/instagramicon.png" alt="Instagram">
   </a>
-  <a href="#" aria-label="YouTube" class="footer__social-link">
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer__social-link">
     <img src="images/youtubeicon.png" alt="YouTube">
   </a>
-  <a href="#" aria-label="Facebook" class="footer__social-link">
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
     <img src="images/facebookicon.png" alt="Facebook">
   </a>
 </div>
     </div>
 
     <div class="footer__col">
-      <h4>Spaces</h4>
+      <h3>Простори</h3>
       <ul>
-        <li><a href="#">Co-working spaces</a></li>
-        <li><a href="#">Meeting rooms</a></li>
-        <li><a href="#">Event spaces</a></li>
-        <li><a href="#">Child playground</a></li>
-        <li><a href="#">Cafe &amp; resto</a></li>
+        <li><a href="workspace.html">Коворкінг-простори</a></li>
+        <li><a href="workspace.html">Переговорні кімнати</a></li>
+        <li><a href="events.html">Зали для подій</a></li>
+        <li><a href="index.html#facilities">Дитячий майданчик</a></li>
+        <li><a href="index.html#facilities">Кафе та ресторан</a></li>
       </ul>
     </div>
     <div class="footer__col">
-      <h4>Company</h4>
+      <h3>Компанія</h3>
       <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Press</a></li>
+        <li><a href="index.html#about">Про нас</a></li>
+        <li><a href="workspace.html#pricing">Ціни</a></li>
+        <li>Кар'єра</li>
+        <li>Преса</li>
       </ul>
     </div>
     <div class="footer__col">
-      <h4>Support</h4>
+      <h3>Підтримка</h3>
       <ul>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Help</a></li>
+        <li><a href="contact.html#faq">Часті запитання</a></li>
+        <li>Політика конфіденційності</li>
+        <li><a href="contact.html#faq">Допомога</a></li>
+        <li><a href="workspace.html" id="luckyLink">Мені пощастить</a></li>
       </ul>
     </div>
     <div class="footer__col">
-      <h4>Contact Us</h4>
+      <h3>Контакти</h3>
       <ul class="footer__contact">
         <li><span class="contact-label">E.</span> Hello@frispes.com</li>
-        <li><span class="contact-label">A.</span> Jalan Jayakatwang No.301 Ngasem, Kediri</li>
+        <li><span class="contact-label">A.</span> вул. Джакатванг №301 Нгасем, Кедірі</li>
         <li><span class="contact-label">P.</span> (+62) 82334670000</li>
       </ul>
     </div>

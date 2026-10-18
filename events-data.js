@@ -17,7 +17,7 @@
       category: 'Tech',
       date: '2026-11-12',
       description: 'Watch the keynote live on the big screen with local developers.',
-      image: 'images/news1.png',
+      image: 'images/news1.webp',
       featured: true,
     },
     {
@@ -26,7 +26,7 @@
       category: 'Design',
       date: '2026-11-18',
       description: 'A talk on calm, productive desks with live Q&A.',
-      image: 'images/news2.png',
+      image: 'images/news2.webp',
       featured: true,
     },
     {

@@ -13,52 +13,52 @@
   const EVENTS = [
     {
       id: 1,
-      title: 'Google I/O watch party',
-      category: 'Tech',
+      title: 'Перегляд Google I/O наживо',
+      category: 'Технології',
       date: '2026-11-12',
-      description: 'Watch the keynote live on the big screen with local developers.',
+      description: 'Дивіться основну презентацію на великому екрані разом із місцевими розробниками.',
       image: 'images/news1.webp',
       featured: true,
     },
     {
       id: 2,
-      title: 'Minimal workspace for inspiration',
-      category: 'Design',
+      title: 'Мінімалістичний робочий простір для натхнення',
+      category: 'Дизайн',
       date: '2026-11-18',
-      description: 'A talk on calm, productive desks with live Q&A.',
+      description: 'Розмова про спокійні, продуктивні робочі місця та сесія запитань-відповідей наживо.',
       image: 'images/news2.webp',
       featured: true,
     },
     {
       id: 3,
-      title: 'Remote vs office productivity',
-      category: 'Talks',
+      title: 'Продуктивність: віддалена робота проти офісу',
+      category: 'Дискусії',
       date: '2026-11-25',
-      description: 'Panel: does productivity really grow when working remotely?',
+      description: 'Панельна дискусія: чи дійсно зростає продуктивність при роботі з дому?',
       image: 'images/news3.png',
       featured: true,
     },
     {
       id: 4,
-      title: 'Morning routine workshop',
-      category: 'Wellness',
+      title: 'Воркшоп з ранкової рутини',
+      category: 'Здоров’я',
       date: '2026-12-02',
-      description: 'Hands-on habits that boost your mood and focus.',
+      description: 'Практичні звички, які покращують настрій та фокус уваги.',
       image: 'images/news4.png',
       featured: true,
     },
     {
       id: 5,
-      title: 'How to find your co-working',
-      category: 'Talks',
+      title: 'Як знайти свій коворкінг',
+      category: 'Дискусії',
       date: '2026-12-09',
-      description: '5+ tips for choosing a comfortable co-working space.',
+      description: '5+ порад щодо вибору зручного простору для роботи.',
       image: '',
       featured: false,
     },
   ];
 
-  const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+  const MONTHS = ['СІЧ', 'ЛЮТ', 'БЕР', 'КВІ', 'ТРА', 'ЧЕР', 'ЛИП', 'СЕР', 'ВЕР', 'ЖОВ', 'ЛИС', 'ГРУ'];
 
   /* ---- ХЕЛПЕР: створення елемента ----
      textContent замість innerHTML, тому текст з даних не може
@@ -74,20 +74,20 @@
     return node;
   }
 
-  // "2026-11-12" → { day: '12', month: 'NOV' } (без new Date, щоб не зсувався часовий пояс)
+  // "2026-11-12" → { day: '12', month: 'ЛИС' } (без new Date, щоб не зсувався часовий пояс)
   function splitDate(iso) {
     const [, m, d] = iso.split('-');
     return { day: d, month: MONTHS[Number(m) - 1] };
   }
 
-  // Кнопка "Register" - відкриває модалку m-reg і передає їй назву події
+  // Кнопка "Зареєструватися" - відкриває модалку m-reg і передає їй назву події
   function registerButton(event, cls) {
     return el('button', {
       class: 'btn ' + cls + ' btn--sm',
       type: 'button',
       'data-open': 'm-reg',
       'data-ev': event.title,
-      text: 'Register',
+      text: 'Зареєструватися',
     });
   }
 
@@ -126,7 +126,7 @@
           class: 'chip' + (i === 0 ? ' active' : ''),
           type: 'button',
           'data-f': cat,
-          text: cat === 'all' ? 'All' : cat,
+          text: cat === 'all' ? 'Усі' : cat,
         })
       );
     });
@@ -138,7 +138,7 @@
     if (!list) return;
 
     if (events.length === 0) {
-      list.appendChild(el('p', { class: 'lead2', text: 'No upcoming events yet - check back soon!' }));
+      list.appendChild(el('p', { class: 'lead2', text: 'Поки що немає запланованих подій — заглядайте пізніше!' }));
       return;
     }
 
